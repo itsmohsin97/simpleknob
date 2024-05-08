@@ -1,0 +1,45 @@
+.volume-knob {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: rgba(63, 63, 237, 0.619); /* Change background color to blue */
+    cursor: pointer;
+  }
+  
+  .knob-pointer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 50%;
+    background-color: #fff; /* Change pointer color to white */
+    transform: translateX(-50%);
+  }
+  
+  .volume-value {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+  }
+  
+  .increase-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(86, 86, 223, 0.71); /* Change indicator color to blue */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .increase-indicator.visible {
+    opacity: 0.5;
+  }
+  
